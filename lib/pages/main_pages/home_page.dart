@@ -136,23 +136,7 @@ void initState() {
                     ),
                   )),
 
-              SizedBox(height: 20),
 
-              Center(
-                  child: Container(
-                    height: 50.0,
-                    width: 315,
-                    decoration: BoxDecoration(
-                        color: Colors.deepOrange,
-                        borderRadius: BorderRadius.circular(15.0)),
-
-                    child: InkWell(
-                      onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => IngredientsPage()));
-
-                      },
-                    ),
-                  )),
 
             ],
           ),

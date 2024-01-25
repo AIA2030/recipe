@@ -108,10 +108,13 @@ class _FavouritePageState extends State<FavouritePage> {
 
                                     SizedBox(width: 10,),
 
-                                    Text( recipeProvider.recipesList![index].title ?? 'No Name', style: TextStyle(fontSize: 9.0, fontWeight: FontWeight.w500, color: Colors.deepOrange, fontFamily: 'Hellix'),),
+                                    Text( 'Rates: ${recipeProvider.recipesList![index].rate}', style: TextStyle(fontSize: 9.0, fontWeight: FontWeight.w500, color: Colors.deepOrange, fontFamily: 'Hellix'),),
 
                                   ],
                                 ),
+                                SizedBox(height: 5,),
+
+                                Text( 'Calories: ${recipeProvider.recipesList![index].calories}', style: TextStyle(fontSize: 9.0, fontWeight: FontWeight.w500, color: Colors.deepOrange, fontFamily: 'Hellix'),),
 
                                 SizedBox(height: 5,),
 
@@ -130,7 +133,7 @@ class _FavouritePageState extends State<FavouritePage> {
                                             children: [
                                               Icon(FontAwesomeIcons.clock, color: Colors.grey.shade400, size: 12),
                                               SizedBox(width: 5,),
-                                              Text( recipeProvider.recipesList![index].type ?? 'No Name', style: TextStyle(fontSize: 10.0, fontWeight: FontWeight.w500, color: Colors.grey.shade400, fontFamily: 'Hellix'),),
+                                              Text( 'Total Time: ${recipeProvider.recipesList![index].total_time}', style: TextStyle(fontSize: 10.0, fontWeight: FontWeight.w500, color: Colors.grey.shade400, fontFamily: 'Hellix'),),
 
                                             ],
                                           ),
@@ -143,7 +146,7 @@ class _FavouritePageState extends State<FavouritePage> {
                                             children: [
                                               Icon(FontAwesomeIcons.bellConcierge, color: Colors.grey.shade400, size: 12),
                                               SizedBox(width: 5,),
-                                              Text( recipeProvider.recipesList![index].type ?? 'No Name', style: TextStyle(fontSize: 10.0, fontWeight: FontWeight.w500, color: Colors.grey.shade400, fontFamily: 'Hellix'),),
+                                              Text( 'Serving: ${recipeProvider.recipesList![index].serving}', style: TextStyle(fontSize: 10.0, fontWeight: FontWeight.w500, color: Colors.grey.shade400, fontFamily: 'Hellix'),),
                                             ],
                                           ),
                                         ],
