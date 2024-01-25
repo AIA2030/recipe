@@ -32,7 +32,9 @@ class AdsProvider extends ChangeNotifier {
   Future<void> getAds() async {
     try {
       var result = await FirebaseFirestore.instance
-          .collection('ads').get();
+          .collection('ads')
+          .where('isActive', isEqualTo: true)
+          .get();
 
       if (result.docs.isNotEmpty) {
         _adsList = List<Ad>.from(

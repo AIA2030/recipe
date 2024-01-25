@@ -60,24 +60,7 @@ class _HeaderDrawerState extends State<HeaderDrawer> {
 
       ),
     ],
-    // accountName: Row(
-    //   children: <Widget>[
-    //     CircleAvatar(
-    //       backgroundImage: NetworkImage('https://cdn.pixabay.com/photo/2016/11/29/05/46/young-woman-1867618_1280.jpg', ),
-    //     ),
-    //     SizedBox(width: 20,),
-    //     Column(
-    //       mainAxisAlignment: MainAxisAlignment.center,
-    //       children: <Widget>[
-    //         Text('Emma Holmes', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w500, color: Colors.black87, fontFamily: 'Hellix')),
-    //
-    //         SizedBox(height: 5,),
-    //
-    //         Text('View Profile', style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w500, color: Colors.grey, fontFamily: 'Hellix')),
-    //       ],
-    //     ),
-    //   ],
-    // ),
+
     ),
     ),
       ],

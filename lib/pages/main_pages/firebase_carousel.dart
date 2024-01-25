@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:daily_recipe/widgets/ads_widget.dart';
-import 'package:daily_recipe/widgets/recipe_widget.dart';
+import 'package:daily_recipe/widgets/test_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:overlay_kit/overlay_kit.dart';
 
@@ -25,7 +25,7 @@ class _FirebaseCarouselPageState extends State<FirebaseCarouselPage> {
         child: Column(
           children: [
              AdsWidget(),
-            RecipeWidget(),
+            TestWidget(),
 
             SizedBox(height: 10),
 

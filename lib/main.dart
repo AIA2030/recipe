@@ -1,7 +1,9 @@
 
 
 import 'package:daily_recipe/pages/splash_screen/splash_screen.dart';
+import 'package:daily_recipe/provider/Ingredients.provider.dart';
 import 'package:daily_recipe/provider/recipe.provider.dart';
+import 'package:daily_recipe/provider/test.provider.dart';
 import 'package:provider/provider.dart';
 import 'package:daily_recipe/provider/ads.provider.dart';
 import 'package:daily_recipe/provider/app_auth.provider.dart';
@@ -31,7 +33,10 @@ Future<void> main() async {
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(create: (_)=> AppAuthProvider()),
     ChangeNotifierProvider(create: (context)=> AdsProvider()),
+    ChangeNotifierProvider(create: (context)=> IngredientsProvider()),
     ChangeNotifierProvider(create: (context)=> RecipeProvider()),
+    ChangeNotifierProvider(create: (context)=> TestProvider()),
+
   ], child:const MyApp( )));
   // runApp(ChangeNotifierProvider(create: (context)=> AdsProvider(), child:const MyApp()));
 }

@@ -14,7 +14,10 @@ class _HerzontialScrollState extends State<HerzontialScroll> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return
+
+
+      SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Container(
         // padding: EdgeInsets.all(10),
